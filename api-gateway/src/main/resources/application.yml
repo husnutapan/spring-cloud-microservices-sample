@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+zuul:
+  routes:
+    animal-service:
+      path: /**
+      url: http://localhost:5000
+
+
